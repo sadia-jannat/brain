@@ -1,0 +1,132 @@
+{% extends "food/base.html"%}
+{% block content %}
+{% load static %}
+
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="{% static 'style.css'%}" type="text/css">
+
+    <title>Brain Tumor</title>
+
+       <style>
+#myHeader {
+  padding: 10px;
+  text-align: center;
+  width:600px;
+}
+
+#my2
+{
+ color: black;
+  text-align: justify;
+ padding:1px
+
+
+}
+
+#sym{
+color: black;
+  text-align: center;
+}
+
+.card{
+border:5px solid black;
+}
+
+#dia{
+
+color: black;
+text-align:center;
+
+}
+
+.button1 {background-color: #4CAF50;} /* Green */
+
+
+
+</style>
+
+  </head>
+
+   <body >
+
+
+     <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">Brain Tumor</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#Types">Types <span class="sr-only">(current)</span></a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="#Symptoms">Symptoms   </a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="#Diagnosis">Diagnosis  </a>
+      </li>
+
+       <li class="nav-item">
+        <a class="nav-link" href="{% url 'food/chart.html' %}">Treatment  </a>
+      </li>
+
+       <li class="nav-item">
+        <a class="nav-link" href="../food/">Food  </a>
+      </li>
+
+        <li class="nav-item">
+        <a class="nav-link" href="../food/">Diagram</a>
+      </li>
+
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          List doctors
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="http://www.whereindoctor.com/2018/08/neurosurgery-specialist-doctor-list-of.html">Bangladesh</a>
+          <a class="dropdown-item" href="https://www.spineandneurosurgeryhospitalindia.com/blog/top-10-brain-tumor-surgeons-in-india/">India</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="https://www.cmch-vellore.edu/">Suggestion</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+
+
+
+  <div class="row"> <!-- types block -->
+           <div class="col-md-6" style="margin:1rem auto 0 auto;">
+
+  <h1 id="myHeader">
+
+      <ul class="list-group list-group-flush">
+  <li class="list-group-item">brain tumor</li></ul>
+
+  </h1>
+           </div>
+      </div>
+
+   {% endblock content %}
+
